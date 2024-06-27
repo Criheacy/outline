@@ -386,7 +386,7 @@ export class Environment {
   /**
    * The name of the service to use in DataDog.
    */
-  public DD_SERVICE = environment.DD_SERVICE ?? "outline";
+  public DD_SERVICE = environment.DD_SERVICE ?? "docs";
 
   /**
    * A string representing the version of the software.
@@ -520,7 +520,7 @@ export class Environment {
    */
   public FILE_STORAGE_LOCAL_ROOT_DIR =
     this.toOptionalString(environment.FILE_STORAGE_LOCAL_ROOT_DIR) ??
-    "/var/lib/outline/data";
+    "/var/lib/docs/data";
 
   /**
    * Set max allowed upload size for file attachments.
@@ -586,7 +586,7 @@ export class Environment {
    * The product name
    */
   @Public
-  public APP_NAME = "Outline";
+  public APP_NAME = "Docs";
 
   /**
    * Returns true if the current installation is the cloud hosted version at

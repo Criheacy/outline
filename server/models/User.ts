@@ -450,7 +450,7 @@ class User extends ParanoidModel<
     }
 
     // Track the clients each user is using
-    if (ctx.userAgent?.source.includes("Outline/")) {
+    if (ctx.userAgent?.source.includes("Docs/")) {
       this.setFlag(UserFlag.Desktop);
     } else if (ctx.userAgent?.isDesktop) {
       this.setFlag(UserFlag.DesktopWeb);

@@ -40,7 +40,7 @@ export default class RedisAdapter extends Redis {
      * For debugging. The connection name is based on the services running in
      * this process. Note that this does not need to be unique.
      */
-    const connectionNamePrefix = env.isDevelopment ? process.pid : "outline";
+    const connectionNamePrefix = env.isDevelopment ? process.pid : "docs";
     const connectionName =
       `${connectionNamePrefix}:${env.SERVICES.join("-")}` +
       (connectionNameSuffix ? `:${connectionNameSuffix}` : "");

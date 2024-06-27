@@ -11,7 +11,7 @@ class Metrics {
 
     ddMetrics.init({
       apiKey: env.DD_API_KEY,
-      prefix: "outline.",
+      prefix: "docs.",
       defaultTags: [`env:${process.env.DD_ENV ?? env.ENVIRONMENT}`],
     });
   }

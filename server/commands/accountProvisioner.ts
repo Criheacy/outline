@@ -219,7 +219,6 @@ async function provisionFirstCollection(team: Team, user: User) {
       "Integrations & API",
       "Our Editor",
       "Getting Started",
-      "What is Outline",
     ];
 
     for (const title of onboardingDocs) {

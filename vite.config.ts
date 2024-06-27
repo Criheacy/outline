@@ -106,8 +106,8 @@ export default () =>
           ],
         },
         manifest: {
-          name: "Outline",
-          short_name: "Outline",
+          name: "Criheacy's Docs",
+          short_name: "docs",
           theme_color: "#fff",
           background_color: "#fff",
           start_url: "/",
@@ -173,10 +173,10 @@ export default () =>
           index: "./app/index.tsx",
         },
         output: {
-          assetFileNames: 'assets/[name].[hash][extname]',
-          chunkFileNames: 'assets/[name].[hash].js',
-          entryFileNames: 'assets/[name].[hash].js',
-        }
+          assetFileNames: "assets/[name].[hash][extname]",
+          chunkFileNames: "assets/[name].[hash].js",
+          entryFileNames: "assets/[name].[hash].js",
+        },
       },
     },
   });

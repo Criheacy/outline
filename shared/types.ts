@@ -26,7 +26,7 @@ export enum ExportContentType {
 
 export enum FileOperationFormat {
   JSON = "json",
-  MarkdownZip = "outline-markdown",
+  MarkdownZip = "docs-markdown",
   HTMLZip = "html",
   PDF = "pdf",
   Notion = "notion",

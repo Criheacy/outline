@@ -38,7 +38,7 @@ export default function createMiddleware(providerName: string) {
 
             // form a URL object with the err.redirectPath and replace the host
             const reqProtocol =
-              state?.client === Client.Desktop ? "outline" : ctx.protocol;
+              state?.client === Client.Desktop ? "docs" : ctx.protocol;
 
             // `state.host` cannot be trusted if the error is a state mismatch, use `ctx.hostname`
             const requestHost =
