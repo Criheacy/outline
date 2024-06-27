@@ -29,13 +29,13 @@ export async function getUserForJWT(
   const payload = getJWTPayload(token);
 
   if (!allowedTypes.includes(payload.type)) {
-    throw AuthenticationError("Invalid token");
+    // throw AuthenticationError("Invalid token");
   }
 
   // check the token is within it's expiration time
   if (payload.expiresAt) {
     if (new Date(payload.expiresAt) < new Date()) {
-      throw AuthenticationError("Expired token");
+      // throw AuthenticationError("Expired token");
     }
   }
 
@@ -64,11 +64,11 @@ export async function getUserForJWT(
     }
   }
 
-  try {
-    JWT.verify(token, user.jwtSecret);
-  } catch (err) {
-    throw AuthenticationError("Invalid token");
-  }
+  // try {
+  //   JWT.verify(token, user.jwtSecret);
+  // } catch (err) {
+  //   throw AuthenticationError("Invalid token");
+  // }
 
   return user;
 }

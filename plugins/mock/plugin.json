@@ -1,0 +1,6 @@
+{
+  "id": "mock",
+  "name": "Mock",
+  "priority": 0,
+  "description": "Mocks a dummy user."
+}
