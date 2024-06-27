@@ -279,7 +279,7 @@ justify-content: start;
 color: ${props.theme.text};
 font-family: ${props.theme.fontFamily};
 font-weight: ${props.theme.fontWeightRegular};
-font-size: 1em;
+font-size: 1.15em;
 line-height: -0.011;
 width: 100%;
 
@@ -346,7 +346,7 @@ width: 100%;
   h5,
   h6 {
     margin-top: 1em;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em;
     font-weight: 600;
     cursor: text;
 
@@ -381,10 +381,10 @@ width: 100%;
   // which is between h1 and h2
   h1 { font-size: 28px; }
   h2 { font-size: 22px; }
-  h3 { font-size: 18px; }
-  h4 { font-size: 16px; }
-  h5 { font-size: 15px; }
-  h6 { font-size: 15px; }
+  h3 { font-size: 20px; }
+  h4 { font-size: 18px; }
+  h5 { font-size: 18px; }
+  h6 { font-size: 18px; }
 
   .ProseMirror-yjs-cursor {
     position: relative;
@@ -772,12 +772,12 @@ h6:not(.placeholder):before {
   opacity: 0;
   user-select: none;
   background: ${props.theme.background};
-  margin-${props.rtl ? "right" : "left"}: -26px;
+  margin-${props.rtl ? "right" : "left"}: -32px;
   flex-direction: ${props.rtl ? "row-reverse" : "row"};
   display: none;
   position: relative;
   top: -2px;
-  width: 26px;
+  width: 32px;
   height: 24px;
 
   &.collapsed {
@@ -1073,7 +1073,7 @@ ol li::before {
   width: 24px;
   height: 24px;
   position: absolute;
-  ${props.rtl ? "right" : "left"}: -40px;
+  ${props.rtl ? "right" : "left"}: -45px;
   opacity: 0;
   transition: opacity 200ms ease-in-out;
 }
@@ -1140,6 +1140,10 @@ ul.checkbox_list li .checkbox {
 li p:first-child {
   margin: 0;
   word-break: break-word;
+}
+    
+li {
+  line-height: 1.8;
 }
 
 hr {
@@ -1247,8 +1251,8 @@ mark {
     word-break: break-all;
     white-space: break-spaces;
     font-family: ${props.theme.fontFamilyMono};
-    font-size: 13px;
-    line-height: 1.4em;
+    font-size: 16px;
+    line-height: 1.6em;
     color: ${props.theme.textTertiary};
     background: ${props.theme.codeBackground};
     text-align: right;
@@ -1291,7 +1295,7 @@ pre {
   display: block;
   overflow-x: auto;
   padding: 0.75em 1em;
-  line-height: 1.4em;
+  line-height: 1.6em;
   position: relative;
   background: ${props.theme.codeBackground};
   border-radius: 4px;
@@ -1300,7 +1304,7 @@ pre {
 
   -webkit-font-smoothing: initial;
   font-family: ${props.theme.fontFamilyMono};
-  font-size: 13px;
+  font-size: 16px;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -1316,7 +1320,7 @@ pre {
   color: ${props.theme.code};
 
   code {
-    font-size: 13px;
+    font-size: 16px;
     background: none;
     padding: 0;
     border: 0;
@@ -1329,6 +1333,7 @@ table {
   border-radius: 4px;
   margin-top: 1em;
   box-sizing: border-box;
+  font-size: 1em;
 
   * {
     box-sizing: border-box;
